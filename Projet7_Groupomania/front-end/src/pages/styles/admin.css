@@ -1,0 +1,49 @@
+div.alignementUser {
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin div .post article {
+    display: flex;
+    justify-content: center;
+}
+div .post {
+    text-decoration: none;
+    color: unset;
+}
+
+.post :hover .table {
+    box-shadow: var(--text-color) 0 0 22px 6px;
+}
+
+tbody tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 992px;
+}
+
+.table  {
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    margin: 1px;
+}
+
+main.admin {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    tbody tr {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    tbody tr {
+        max-width: 100px;
+        /* min-width: 20px; */
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,131 @@
+/*******************/
+/*DIMENSION POST*/
+/*****************/
+article.comment {
+    display: flex;
+    justify-content: space-between;
+}
+article.comment div {
+    margin: auto;
+    max-width: 992px;
+}
+
+.info article .alignTitleComment {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+} 
+.info article img, form section.postView img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.info article h1, .info article p {
+    display: flex;
+    justify-content: center;
+}
+
+div.commentOrder, div.alignDescribePost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+/*******************/
+/*DIMENSION BUTTON*/
+/*****************/
+button {
+    border-radius: 5px;
+    cursor: pointer
+}
+.btn-send {
+    display: flex;
+    justify-content: space-around;
+}
+button.send, button.modify {
+    background: var(--tertiaire-color);
+    border: 1px solid var(--tertiaire-color);
+    margin: 15px;
+    color: var(--font-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button.delete, button.cancel {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin: 15px;
+    color: var(--font-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button.send:hover, button.modify:hover {
+    background: var(--font-color);
+    color: var(--tertiaire-color);
+}
+
+button.delete:hover, button.cancel:hover {
+    background: var(--font-color);
+    color: var(--primary-color);
+}
+
+
+
+/****************************/
+/*TITLE AND TEXT OF COMMENT*/
+/**************************/
+
+textarea {
+    min-width: 500px;
+    min-height: 100px;
+    max-width: 700px;
+    max-height: 200px;
+}
+
+label#title, input#title {
+    min-width: 470px;
+    min-height: 10px;
+    max-width: 700px;
+    max-height: 200px;
+}
+
+/*******/
+/*LIKE*/
+/*****/
+button.like-button {
+    cursor: pointer;
+    font-size: 15px;
+    background: var(--tertiaire-color);
+    border: 1px solid var(--tertiaire-color);
+    border-radius: 10px;
+    color: var(--font-color);
+    padding: 10px 20px;
+}
+
+button.like-button:hover {
+    background: var(--font-color);
+    color: var(--text-color);
+}
+
+/*******************/
+/*MODIFICATION POST*/
+/*****************/
+
+div.alignDescribePost input, div.alignDescribePost label, div.alignDescribePost textarea{
+    margin: 10px;
+}
+
+/*******************/
+/*ADD POST*/
+/*****************/
+
+.postView p {
+    display: flex;
+    justify-content: center;
+}
