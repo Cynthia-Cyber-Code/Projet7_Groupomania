@@ -19,14 +19,16 @@ article.comment div {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 500px;
-    height: 250px;
+    max-width: 500px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
 }
 .info article h1, .info article p {
     display: flex;
     justify-content: center;
+    max-width: 500px;
+    margin: auto;
 }
 
 div.commentOrder, div.alignDescribePost {
@@ -128,4 +130,34 @@ div.alignDescribePost input, div.alignDescribePost label, div.alignDescribePost 
 .postView p {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    textarea {
+        min-width: 500px;
+        min-height: 100px;
+        max-width: 700px;
+        max-height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .info article img{
+        width: 300px;
+        height: 300px;
+    }
+    textarea {
+        min-width: 300px;
+        min-height: 100px;
+        max-width: 700px;
+        max-height: 200px;
+    }
+    label#title,
+    input#title {
+        min-width: 270px;
+        min-height: 10px;
+        max-width: 700px;
+        max-height: 200px;
+    }
 }

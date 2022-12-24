@@ -99,7 +99,6 @@ const NewPost = () => {
     return (
         <>
             <Header />
-            {/* <div className="post-container"> */}
             <form className="post-container" onSubmit={() => handlePost}>
                 {postPicture ? (
                     <section className="postView">
@@ -126,7 +125,6 @@ const NewPost = () => {
                     <button className="send" onClick={handlePost}> Envoyer </button>
                 </div>
             </form>
-            {/* </div> */}
             <Footer />
         </>
     );

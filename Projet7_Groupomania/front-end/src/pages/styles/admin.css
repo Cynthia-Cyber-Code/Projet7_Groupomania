@@ -26,7 +26,7 @@ tbody tr {
 .table  {
     border: 2px solid var(--text-color);
     border-radius: 10px;
-    margin: 1px;
+    margin: 5px;
 }
 
 main.admin {
@@ -35,15 +35,18 @@ main.admin {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     tbody tr {
-        width: 768px;
+        width: 730px;
     }
 }
 
 @media screen and (max-width: 768px) {
     tbody tr {
-        max-width: 100px;
-        /* min-width: 20px; */
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
     }
-
+    div.alignementUser {
+        display: none;
+    }
 }
