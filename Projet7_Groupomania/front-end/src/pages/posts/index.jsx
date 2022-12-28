@@ -28,7 +28,7 @@ function Posts() {
                 .then((res) => {
                     if (typeof res.data !== 'undefined' && res.data.length > 0) {
                         const cardData = res.data;
-                        setPostsData(cardData.sort());
+                        setPostsData(cardData.sort().reverse());
                     } else {
                         setNothing(true);
                     }
